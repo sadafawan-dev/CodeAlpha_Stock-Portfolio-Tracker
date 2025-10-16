@@ -1,36 +1,36 @@
-# 💬 Basic Chatbot  
+# 📊 Stock Portfolio Tracker  
 
 ## 📘 Overview  
-This project focuses on building a simple rule-based chatbot that can respond to basic user inputs such as greetings and farewells. It demonstrates fundamental Python programming concepts like conditional statements, loops, and functions.  
+This project focuses on building a simple command-line stock portfolio tracker that calculates the total investment value based on predefined stock prices. It demonstrates Python fundamentals such as dictionaries, loops, and file handling.  
 
 ## 🎯 Objective  
-To design a text-based chatbot that provides predefined responses to user input using simple rule-based logic.  
+To create a simple tool that calculates total investment value from user-input stock names and quantities using hardcoded stock prices.  
 
 ## 🚀 Features  
-- Responds to user inputs such as “hello”, “how are you”, and “bye”  
-- Uses rule-based logic with if-elif statements  
-- Interactive text-based console interface  
-- Easy to modify and extend with additional responses  
+- Accepts user input for stock names and quantities  
+- Uses a predefined dictionary to store stock prices  
+- Calculates total investment value  
+- Optionally saves results in a `.txt` or `.csv` file  
+- Simple and user-friendly console interface  
 
 ## 🧠 Tech Stack  
 - Python  
-- If-elif statements  
-- Functions and loops  
-- Console input/output  
+- Dictionaries for data storage  
+- Loops and conditional statements  
+- File handling (optional)  
 
 ## ⚙️ How It Works  
-1. The chatbot receives user input from the console.  
-2. It checks the input using if-elif statements to find a matching predefined response.  
-3. The chatbot prints the appropriate reply to the console.  
-4. The conversation continues until the user types “bye”.  
+1. A dictionary stores stock symbols and their corresponding prices (e.g., {"AAPL": 180, "TSLA": 250}).  
+2. The user enters stock names and quantities.  
+3. The total investment value is calculated by multiplying quantity by price.  
+4. The result is displayed and optionally saved to a file.  
 
-## 💡 Example Conversation  
+## 💡 Example Output  
+Enter stock name: AAPL
+Enter quantity: 5
 
-You: hello
-Bot: Hi!
+Enter stock name: TSLA
+Enter quantity: 3
 
-You: how are you
-Bot: I'm fine, thanks!
-
-You: bye
-Bot: Goodbye!
+Your total investment value is: $1650
+Results saved to portfolio.txt
